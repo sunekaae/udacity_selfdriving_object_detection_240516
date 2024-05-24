@@ -1,0 +1,352 @@
+timestamp,message
+1716553629226,"2024-05-24 12:27:09,202 sagemaker-training-toolkit INFO     No Neurons detected (normal if no neurons installed)"
+1716553630226,"2024-05-24 12:27:09,240 sagemaker-training-toolkit INFO     No Neurons detected (normal if no neurons installed)"
+1716553630226,"2024-05-24 12:27:09,277 sagemaker-training-toolkit INFO     No Neurons detected (normal if no neurons installed)"
+1716553630226,"2024-05-24 12:27:09,292 sagemaker-training-toolkit INFO     Invoking user script"
+1716553630226,Training Env:
+1716553630228,"{
+    ""additional_framework_parameters"": {},
+    ""channel_input_dirs"": {
+        ""train"": ""/opt/ml/input/data/train"",
+        ""val"": ""/opt/ml/input/data/val""
+    },
+    ""current_host"": ""algo-1"",
+    ""current_instance_group"": ""homogeneousCluster"",
+    ""current_instance_group_hosts"": [
+        ""algo-1""
+    ],
+    ""current_instance_type"": ""ml.g5.xlarge"",
+    ""distribution_hosts"": [],
+    ""distribution_instance_groups"": [],
+    ""framework_module"": null,
+    ""hosts"": [
+        ""algo-1""
+    ],
+    ""hyperparameters"": {
+        ""model_dir"": ""/opt/training"",
+        ""num_train_steps"": ""2000"",
+        ""pipeline_config_path"": ""faster_rcnn_resnet152_v1_640x640_coco17_tpu-8.config"",
+        ""sample_1_of_n_eval_examples"": ""1""
+    },
+    ""input_config_dir"": ""/opt/ml/input/config"",
+    ""input_data_config"": {
+        ""train"": {
+            ""TrainingInputMode"": ""File"",
+            ""S3DistributionType"": ""FullyReplicated"",
+            ""RecordWrapperType"": ""None""
+        },
+        ""val"": {
+            ""TrainingInputMode"": ""File"",
+            ""S3DistributionType"": ""FullyReplicated"",
+            ""RecordWrapperType"": ""None""
+        }
+    },
+    ""input_dir"": ""/opt/ml/input"",
+    ""instance_groups"": [
+        ""homogeneousCluster""
+    ],
+    ""instance_groups_dict"": {
+        ""homogeneousCluster"": {
+            ""instance_group_name"": ""homogeneousCluster"",
+            ""instance_type"": ""ml.g5.xlarge"",
+            ""hosts"": [
+                ""algo-1""
+            ]
+        }
+    },
+    ""is_hetero"": false,
+    ""is_master"": true,
+    ""is_modelparallel_enabled"": null,
+    ""is_smddpmprun_installed"": false,
+    ""is_smddprun_installed"": false,
+    ""job_name"": ""tf2-object-detection-2024-05-24-12-24-03-066"",
+    ""log_level"": 20,
+    ""master_hostname"": ""algo-1"",
+    ""model_dir"": ""/opt/ml/model"",
+    ""module_dir"": ""s3://sagemaker-us-east-1-359346771395/tf2-object-detection-2024-05-24-12-24-03-066/source/sourcedir.tar.gz"",
+    ""module_name"": ""run_training.sh"",
+    ""network_interface_name"": ""eth0"",
+    ""num_cpus"": 4,
+    ""num_gpus"": 1,
+    ""num_neurons"": 0,
+    ""output_data_dir"": ""/opt/ml/output/data"",
+    ""output_dir"": ""/opt/ml/output"",
+    ""output_intermediate_dir"": ""/opt/ml/output/intermediate"",
+    ""resource_config"": {
+        ""current_host"": ""algo-1"",
+        ""current_instance_type"": ""ml.g5.xlarge"",
+        ""current_group_name"": ""homogeneousCluster"",
+        ""hosts"": [
+            ""algo-1""
+        ],
+        ""instance_groups"": [
+            {
+                ""instance_group_name"": ""homogeneousCluster"",
+                ""instance_type"": ""ml.g5.xlarge"",
+                ""hosts"": [
+                    ""algo-1""
+                ]
+            }
+        ],
+        ""network_interface_name"": ""eth0""
+    },
+    ""user_entry_point"": ""run_training.sh"""
+1716553630228,}
+1716553630228,Environment variables:
+1716553630228,"SM_HOSTS=[""algo-1""]"
+1716553630228,SM_NETWORK_INTERFACE_NAME=eth0
+1716553630228,"SM_HPS={""model_dir"":""/opt/training"",""num_train_steps"":""2000"",""pipeline_config_path"":""faster_rcnn_resnet152_v1_640x640_coco17_tpu-8.config"",""sample_1_of_n_eval_examples"":""1""}"
+1716553630228,SM_USER_ENTRY_POINT=run_training.sh
+1716553630228,SM_FRAMEWORK_PARAMS={}
+1716553630228,"SM_RESOURCE_CONFIG={""current_group_name"":""homogeneousCluster"",""current_host"":""algo-1"",""current_instance_type"":""ml.g5.xlarge"",""hosts"":[""algo-1""],""instance_groups"":[{""hosts"":[""algo-1""],""instance_group_name"":""homogeneousCluster"",""instance_type"":""ml.g5.xlarge""}],""network_interface_name"":""eth0""}"
+1716553630228,"SM_INPUT_DATA_CONFIG={""train"":{""RecordWrapperType"":""None"",""S3DistributionType"":""FullyReplicated"",""TrainingInputMode"":""File""},""val"":{""RecordWrapperType"":""None"",""S3DistributionType"":""FullyReplicated"",""TrainingInputMode"":""File""}}"
+1716553630228,SM_OUTPUT_DATA_DIR=/opt/ml/output/data
+1716553630228,"SM_CHANNELS=[""train"",""val""]"
+1716553630228,SM_CURRENT_HOST=algo-1
+1716553630229,SM_CURRENT_INSTANCE_TYPE=ml.g5.xlarge
+1716553630229,SM_CURRENT_INSTANCE_GROUP=homogeneousCluster
+1716553630229,"SM_CURRENT_INSTANCE_GROUP_HOSTS=[""algo-1""]"
+1716553630229,"SM_INSTANCE_GROUPS=[""homogeneousCluster""]"
+1716553630229,"SM_INSTANCE_GROUPS_DICT={""homogeneousCluster"":{""hosts"":[""algo-1""],""instance_group_name"":""homogeneousCluster"",""instance_type"":""ml.g5.xlarge""}}"
+1716553630229,SM_DISTRIBUTION_INSTANCE_GROUPS=[]
+1716553630229,SM_IS_HETERO=false
+1716553630229,SM_MODULE_NAME=run_training.sh
+1716553630229,SM_LOG_LEVEL=20
+1716553630229,SM_FRAMEWORK_MODULE=
+1716553630229,SM_INPUT_DIR=/opt/ml/input
+1716553630229,SM_INPUT_CONFIG_DIR=/opt/ml/input/config
+1716553630229,SM_OUTPUT_DIR=/opt/ml/output
+1716553630229,SM_NUM_CPUS=4
+1716553630229,SM_NUM_GPUS=1
+1716553630229,SM_NUM_NEURONS=0
+1716553630229,SM_MODEL_DIR=/opt/ml/model
+1716553630229,SM_MODULE_DIR=s3://sagemaker-us-east-1-359346771395/tf2-object-detection-2024-05-24-12-24-03-066/source/sourcedir.tar.gz
+1716553630229,"SM_TRAINING_ENV={""additional_framework_parameters"":{},""channel_input_dirs"":{""train"":""/opt/ml/input/data/train"",""val"":""/opt/ml/input/data/val""},""current_host"":""algo-1"",""current_instance_group"":""homogeneousCluster"",""current_instance_group_hosts"":[""algo-1""],""current_instance_type"":""ml.g5.xlarge"",""distribution_hosts"":[],""distribution_instance_groups"":[],""framework_module"":null,""hosts"":[""algo-1""],""hyperparameters"":{""model_dir"":""/opt/training"",""num_train_steps"":""2000"",""pipeline_config_path"":""faster_rcnn_resnet152_v1_640x640_coco17_tpu-8.config"",""sample_1_of_n_eval_examples"":""1""},""input_config_dir"":""/opt/ml/input/config"",""input_data_config"":{""train"":{""RecordWrapperType"":""None"",""S3DistributionType"":""FullyReplicated"",""TrainingInputMode"":""File""},""val"":{""RecordWrapperType"":""None"",""S3DistributionType"":""FullyReplicated"",""TrainingInputMode"":""File""}},""input_dir"":""/opt/ml/input"",""instance_groups"":[""homogeneousCluster""],""instance_groups_dict"":{""homogeneousCluster"":{""hosts"":[""algo-1""],""instance_group_name"":""homogeneousCluster"",""instance_type"":""ml.g5.xlarge""}},""is_hetero"":false,""is_master"":true,""is_modelparallel_enabled"":null,""is_smddpmprun_installed"":false,""is_smddprun_installed"":false,""job_name"":""tf2-object-detection-2024-05-24-12-24-03-066"",""log_level"":20,""master_hostname"":""algo-1"",""model_dir"":""/opt/ml/model"",""module_dir"":""s3://sagemaker-us-east-1-359346771395/tf2-object-detection-2024-05-24-12-24-03-066/source/sourcedir.tar.gz"",""module_name"":""run_training.sh"",""network_interface_name"":""eth0"",""num_cpus"":4,""num_gpus"":1,""num_neurons"":0,""output_data_dir"":""/opt/ml/output/data"",""output_dir"":""/opt/ml/output"",""output_intermediate_dir"":""/opt/ml/output/intermediate"",""resource_config"":{""current_group_name"":""homogeneousCluster"",""current_host"":""algo-1"",""current_instance_type"":""ml.g5.xlarge"",""hosts"":[""algo-1""],""instance_groups"":[{""hosts"":[""algo-1""],""instance_group_name"":""homogeneousCluster"",""instance_type"":""ml.g5.xlarge""}],""network_interface_name"":""eth0""},""user_entry_point"":""run_training.sh""}"
+1716553630229,"SM_USER_ARGS=[""--model_dir"",""/opt/training"",""--num_train_steps"",""2000"",""--pipeline_config_path"",""faster_rcnn_resnet152_v1_640x640_coco17_tpu-8.config"",""--sample_1_of_n_eval_examples"",""1""]"
+1716553630229,SM_OUTPUT_INTERMEDIATE_DIR=/opt/ml/output/intermediate
+1716553630229,SM_CHANNEL_TRAIN=/opt/ml/input/data/train
+1716553630229,SM_CHANNEL_VAL=/opt/ml/input/data/val
+1716553630229,SM_HP_MODEL_DIR=/opt/training
+1716553630229,SM_HP_NUM_TRAIN_STEPS=2000
+1716553630229,SM_HP_PIPELINE_CONFIG_PATH=faster_rcnn_resnet152_v1_640x640_coco17_tpu-8.config
+1716553630229,SM_HP_SAMPLE_1_OF_N_EVAL_EXAMPLES=1
+1716553630229,PYTHONPATH=/opt/ml/code:/usr/local/bin:/usr/lib/python38.zip:/usr/lib/python3.8:/usr/lib/python3.8/lib-dynload:/usr/local/lib/python3.8/dist-packages:/usr/lib/python3/dist-packages
+1716553630229,Invoking script with the following command:
+1716553630230,"/bin/sh -c ""./run_training.sh --model_dir /opt/training --num_train_steps 2000 --pipeline_config_path faster_rcnn_resnet152_v1_640x640_coco17_tpu-8.config --sample_1_of_n_eval_examples 1"""
+1716553630230,"2024-05-24 12:27:09,293 sagemaker-training-toolkit INFO     Exceptions not imported for SageMaker Debugger as it is not installed."
+1716553632230,'"===TRAINING THE MODEL=="
+1716553636232,"INFO:tensorflow:Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0',)"
+1716553636232,"I0524 12:27:15.554060 139673058924352 mirrored_strategy.py:419] Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0',)"
+1716553636232,INFO:tensorflow:Maybe overwriting train_steps: 2000
+1716553636232,I0524 12:27:15.835681 139673058924352 config_util.py:552] Maybe overwriting train_steps: 2000
+1716553636232,INFO:tensorflow:Maybe overwriting use_bfloat16: False
+1716553636232,I0524 12:27:15.835846 139673058924352 config_util.py:552] Maybe overwriting use_bfloat16: False
+1716553636232,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/object_detection/model_lib_v2.py:563: StrategyBase.experimental_distribute_datasets_from_function (from tensorflow.python.distribute.distribute_lib) is deprecated and will be removed in a future version.
+1716553636232,Instructions for updating:
+1716553636232,rename to distribute_datasets_from_function
+1716553636232,W0524 12:27:15.867440 139673058924352 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/object_detection/model_lib_v2.py:563: StrategyBase.experimental_distribute_datasets_from_function (from tensorflow.python.distribute.distribute_lib) is deprecated and will be removed in a future version.
+1716553636232,Instructions for updating:
+1716553636232,rename to distribute_datasets_from_function
+1716553636232,INFO:tensorflow:Reading unweighted datasets: ['/opt/ml/input/data/train/*.tfrecord']
+1716553636232,I0524 12:27:15.873283 139673058924352 dataset_builder.py:162] Reading unweighted datasets: ['/opt/ml/input/data/train/*.tfrecord']
+1716553636232,INFO:tensorflow:Reading record datasets for input file: ['/opt/ml/input/data/train/*.tfrecord']
+1716553636232,I0524 12:27:15.874457 139673058924352 dataset_builder.py:79] Reading record datasets for input file: ['/opt/ml/input/data/train/*.tfrecord']
+1716553636232,INFO:tensorflow:Number of filenames to read: 84
+1716553636232,I0524 12:27:15.874549 139673058924352 dataset_builder.py:80] Number of filenames to read: 84
+1716553636232,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:100: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+1716553636232,Instructions for updating:
+1716553636232,"Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.deterministic`."
+1716553636232,W0524 12:27:15.880855 139673058924352 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:100: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+1716553636232,Instructions for updating:
+1716553636232,"Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.deterministic`."
+1716553636232,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:235: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+1716553636232,Instructions for updating:
+1716553636232,Use `tf.data.Dataset.map()
+1716553636232,W0524 12:27:15.896922 139673058924352 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:235: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+1716553636233,Instructions for updating:
+1716553636233,Use `tf.data.Dataset.map()
+1716553643235,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:1176: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+1716553643235,Instructions for updating:
+1716553643235,Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+1716553643235,W0524 12:27:22.417247 139673058924352 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:1176: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+1716553643235,Instructions for updating:
+1716553643235,Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+1716553645235,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:1176: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+1716553645235,Instructions for updating:
+1716553645235,Use `tf.cast` instead.
+1716553645235,W0524 12:27:24.889985 139673058924352 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:1176: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+1716553645235,Instructions for updating:
+1716553645235,Use `tf.cast` instead.
+1716553664302,"/usr/local/lib/python3.8/dist-packages/keras/src/backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn("
+1716553664302,INFO:tensorflow:depth of additional conv before box predictor: 0
+1716553664302,I0524 12:27:43.633190 139644274468608 convolutional_keras_box_predictor.py:152] depth of additional conv before box predictor: 0
+1716553702311,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:460: Tensor.experimental_ref (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+1716553702311,Instructions for updating:
+1716553702311,Use ref() instead.
+1716553702311,W0524 12:28:21.337808 139644274468608 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:460: Tensor.experimental_ref (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+1716553702311,Instructions for updating:
+1716553702312,Use ref() instead.
+1716553719316,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:1176: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+1716553719316,Instructions for updating:
+1716553719316,Future major versions of TensorFlow will allow gradients to flow
+1716553719316,into the labels input on backprop by default.
+1716553719316,See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+1716553719316,W0524 12:28:38.932923 139644274468608 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:1176: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+1716553719316,Instructions for updating:
+1716553719316,Future major versions of TensorFlow will allow gradients to flow
+1716553719316,into the labels input on backprop by default.
+1716553719316,See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+1716553857352,"Traceback (most recent call last):
+  File ""model_main_tf2.py"", line 114, in <module>
+    tf.compat.v1.app.run()
+  File ""/usr/local/lib/python3.8/dist-packages/tensorflow/python/platform/app.py"", line 36, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File ""/usr/local/lib/python3.8/dist-packages/absl/app.py"", line 308, in run
+    _run_main(main, args)
+  File ""/usr/local/lib/python3.8/dist-packages/absl/app.py"", line 254, in _run_main
+    sys.exit(main(argv))
+  File ""model_main_tf2.py"", line 105, in main
+    model_lib_v2.train_loop(
+  File ""/usr/local/lib/python3.8/dist-packages/object_detection/model_lib_v2.py"", line 605, in train_loop
+    load_fine_tune_checkpoint(
+  File ""/usr/local/lib/python3.8/dist-packages/object_detection/model_lib_v2.py"", line 401, in load_fine_tune_checkpoint
+    _ensure_model_is_built(model, input_dataset, unpad_groundtruth_tensors)
+  File ""/usr/local/lib/python3.8/dist-packages/object_detection/model_lib_v2.py"", line 176, in _ensure_model_is_built
+    strategy.run(
+  File ""/usr/local/lib/python3.8/dist-packages/tensorflow/python/distribute/distribute_lib.py"", line 1673, in run
+    return self._extended.call_for_each_replica(fn, args=args, kwargs=kwargs)
+  File ""/usr/local/lib/python3.8/dist-packages/tensorflow/python/distribute/distribute_lib.py"", line 3250, in call_for_each_replica
+    return self._call_for_each_replica(fn, args, kwargs)
+  File ""/usr/local/lib/python3.8/dist-packages/tensorflow/python/distribute/mirrored_strategy.py"", line 696, in _call_for_each_replica
+    return mirrored_run.call_for_each_replica(
+  File ""/usr/local/lib/python3.8/dist-packages/tensorflow/python/distribute/mirrored_run.py"", line 84, in call_for_each_replica
+    return wrapped(*args, **kwargs)
+  File ""/usr/local/lib/python3.8/dist-packages/tensorflow/python/util/traceback_utils.py"", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File ""/usr/local/lib/python3.8/dist-packages/tensorflow/python/eager/execute.py"", line 53, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,"
+1716553857352,tensorflow.python.framework.errors_impl.ResourceExhaustedError: Graph execution error:
+1716553857352,"Detected at node 'MultiLevelMatMulCropAndResize/MultiLevelRoIAlign/GatherV2_1' defined at (most recent call last):
+    File ""/usr/lib/python3.8/threading.py"", line 890, in _bootstrap
+      self._bootstrap_inner()
+    File ""/usr/lib/python3.8/threading.py"", line 932, in _bootstrap_inner
+      self.run()
+    File ""/usr/local/lib/python3.8/dist-packages/object_detection/model_lib_v2.py"", line 171, in _dummy_computation_fn
+      return _compute_losses_and_predictions_dicts(model, features, labels,
+    File ""/usr/local/lib/python3.8/dist-packages/object_detection/model_lib_v2.py"", line 124, in _compute_losses_and_predictions_dicts
+      prediction_dict = model.predict(
+    File ""/usr/local/lib/python3.8/dist-packages/object_detection/meta_architectures/faster_rcnn_meta_arch.py"", line 822, in predict
+      if self._number_of_stages >= 2:
+    File ""/usr/local/lib/python3.8/dist-packages/object_detection/meta_architectures/faster_rcnn_meta_arch.py"", line 823, in predict
+      prediction_dict.update(
+    File ""/usr/local/lib/python3.8/dist-packages/object_detection/meta_architectures/faster_rcnn_meta_arch.py"", line 1000, in _predict_second_stage
+      prediction_dict = self._box_prediction(rpn_features_to_crop,
+    File ""/usr/local/lib/python3.8/dist-packages/object_detection/meta_architectures/faster_rcnn_meta_arch.py"", line 1062, in _box_prediction
+      flattened_proposal_feature_maps = (
+    File ""/usr/local/lib/python3.8/dist-packages/object_detection/meta_architectures/faster_rcnn_meta_arch.py"", line 2027, in _compute_second_stage_input_feature_maps
+      cropped_regions = self._flatten_first_two_dimensions(
+    File ""/usr/local/lib/python3.8/dist-packages/object_detection/utils/spatial_transform_ops.py"", line 521, in multilevel_matmul_crop_and_resize
+      return multilevel_roi_align(images,
+    File ""/usr/local/lib/python3.8/dist-packages/object_detection/utils/spatial_transform_ops.py"", line 358, in multilevel_roi_align
+      flattened_feature_values = _gather_valid_indices(flattened_features,
+    File ""/usr/local/lib/python3.8/dist-packages/object_detection/utils/spatial_transform_ops.py"", line 275, in _gather_valid_indices
+      return tf.gather(padded_tensor, indices + 1)"
+1716553857352,Node: 'MultiLevelMatMulCropAndResize/MultiLevelRoIAlign/GatherV2_1'
+1716553857352,"OOM when allocating tensor with shape[15052800,1024] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc"
+1716553857352,#011 [[{{node MultiLevelMatMulCropAndResize/MultiLevelRoIAlign/GatherV2_1}}]]
+1716553857352,"Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info. This isn't available when running in Eager mode.
+ [Op:__inference__dummy_computation_fn_199948]"
+1716553867355,'"==EVALUATING THE MODEL=="
+1716553870356,WARNING:tensorflow:Forced number of epochs for all eval validations to be 1.
+1716553870356,W0524 12:31:09.961103 140475808651072 model_lib_v2.py:1089] Forced number of epochs for all eval validations to be 1.
+1716553870356,INFO:tensorflow:Maybe overwriting sample_1_of_n_eval_examples: None
+1716553870356,I0524 12:31:09.961298 140475808651072 config_util.py:552] Maybe overwriting sample_1_of_n_eval_examples: None
+1716553870356,INFO:tensorflow:Maybe overwriting use_bfloat16: False
+1716553870356,I0524 12:31:09.961379 140475808651072 config_util.py:552] Maybe overwriting use_bfloat16: False
+1716553870356,INFO:tensorflow:Maybe overwriting eval_num_epochs: 1
+1716553870356,I0524 12:31:09.961457 140475808651072 config_util.py:552] Maybe overwriting eval_num_epochs: 1
+1716553870356,"WARNING:tensorflow:Expected number of evaluation epochs is 1, but instead encountered `eval_on_train_input_config.num_epochs` = 0. Overwriting `num_epochs` to 1."
+1716553870356,"W0524 12:31:09.961617 140475808651072 model_lib_v2.py:1106] Expected number of evaluation epochs is 1, but instead encountered `eval_on_train_input_config.num_epochs` = 0. Overwriting `num_epochs` to 1."
+1716553870356,INFO:tensorflow:Reading unweighted datasets: ['/opt/ml/input/data/val/*.tfrecord']
+1716553870356,I0524 12:31:10.345363 140475808651072 dataset_builder.py:162] Reading unweighted datasets: ['/opt/ml/input/data/val/*.tfrecord']
+1716553870356,INFO:tensorflow:Reading record datasets for input file: ['/opt/ml/input/data/val/*.tfrecord']
+1716553870356,I0524 12:31:10.346440 140475808651072 dataset_builder.py:79] Reading record datasets for input file: ['/opt/ml/input/data/val/*.tfrecord']
+1716553870356,INFO:tensorflow:Number of filenames to read: 13
+1716553870356,I0524 12:31:10.346537 140475808651072 dataset_builder.py:80] Number of filenames to read: 13
+1716553870356,WARNING:tensorflow:num_readers has been reduced to 13 to match input file shards.
+1716553870357,W0524 12:31:10.346623 140475808651072 dataset_builder.py:86] num_readers has been reduced to 13 to match input file shards.
+1716553870357,"WARNING:tensorflow:`shuffle` is false, but the input data stream is still slightly shuffled since `num_readers` > 1."
+1716553870357,"W0524 12:31:10.348625 140475808651072 dataset_builder.py:93] `shuffle` is false, but the input data stream is still slightly shuffled since `num_readers` > 1."
+1716553870357,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:100: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+1716553870357,Instructions for updating:
+1716553870357,"Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.deterministic`."
+1716553870357,W0524 12:31:10.350031 140475808651072 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:100: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+1716553870357,Instructions for updating:
+1716553870357,"Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.deterministic`."
+1716553871357,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:235: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+1716553871357,Instructions for updating:
+1716553871357,Use `tf.data.Dataset.map()
+1716553871357,W0524 12:31:10.366457 140475808651072 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:235: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+1716553871357,Instructions for updating:
+1716553871357,Use `tf.data.Dataset.map()
+1716553874358,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:1176: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+1716553874358,Instructions for updating:
+1716553874358,Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+1716553874358,W0524 12:31:14.077526 140475808651072 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:1176: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+1716553874358,Instructions for updating:
+1716553874358,Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+1716553875359,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:1176: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+1716553875359,Instructions for updating:
+1716553875359,Use `tf.cast` instead.
+1716553875359,W0524 12:31:15.335591 140475808651072 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:1176: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+1716553875359,Instructions for updating:
+1716553875359,Use `tf.cast` instead.
+1716553878360,INFO:tensorflow:Waiting for new checkpoint at /opt/training
+1716553878360,I0524 12:31:17.789308 140475808651072 checkpoint_utils.py:168] Waiting for new checkpoint at /opt/training
+1716553887362,INFO:tensorflow:Timed-out waiting for a checkpoint.
+1716553887362,I0524 12:31:26.796616 140475808651072 checkpoint_utils.py:231] Timed-out waiting for a checkpoint.
+1716553888362,'"==EXPORTING THE MODEL=="
+1716553891363,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:459: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with back_prop=False is deprecated and will be removed in a future version.
+1716553891363,Instructions for updating:
+1716553891363,back_prop=False is deprecated. Consider using tf.stop_gradient instead.
+1716553891363,Instead of:
+1716553891363,"results = tf.map_fn(fn, elems, back_prop=False)"
+1716553891363,Use:
+1716553891363,"results = tf.nest.map_structure(tf.stop_gradient, tf.map_fn(fn, elems))"
+1716553891363,W0524 12:31:31.129309 139792623216448 deprecation.py:641] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:459: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with back_prop=False is deprecated and will be removed in a future version.
+1716553891363,Instructions for updating:
+1716553891363,back_prop=False is deprecated. Consider using tf.stop_gradient instead.
+1716553891363,Instead of:
+1716553891363,"results = tf.map_fn(fn, elems, back_prop=False)"
+1716553891363,Use:
+1716553891363,"results = tf.nest.map_structure(tf.stop_gradient, tf.map_fn(fn, elems))"
+1716553897365,INFO:tensorflow:depth of additional conv before box predictor: 0
+1716553897365,I0524 12:31:37.061226 139792623216448 convolutional_keras_box_predictor.py:152] depth of additional conv before box predictor: 0
+1716553904367,WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:460: Tensor.experimental_ref (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+1716553904367,Instructions for updating:
+1716553904367,Use ref() instead.
+1716553904367,W0524 12:31:43.617261 139792623216448 deprecation.py:364] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:460: Tensor.experimental_ref (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+1716553904367,Instructions for updating:
+1716553904367,Use ref() instead.
+1716553928373,"Traceback (most recent call last):
+  File ""exporter_main_v2.py"", line 164, in <module>
+    app.run(main)
+  File ""/usr/local/lib/python3.8/dist-packages/absl/app.py"", line 308, in run
+    _run_main(main, args)
+  File ""/usr/local/lib/python3.8/dist-packages/absl/app.py"", line 254, in _run_main
+    sys.exit(main(argv))
+  File ""exporter_main_v2.py"", line 157, in main
+    exporter_lib_v2.export_inference_graph(
+  File ""/usr/local/lib/python3.8/dist-packages/object_detection/exporter_lib_v2.py"", line 271, in export_inference_graph
+    status.assert_existing_objects_matched()
+  File ""/usr/local/lib/python3.8/dist-packages/tensorflow/python/checkpoint/checkpoint.py"", line 966, in assert_existing_objects_matched
+    raise AssertionError("
+1716553928373,AssertionError: No checkpoint specified (save_path=None); nothing is being restored.
+1716553930373,mv: cannot stat '/tmp/exported/saved_model': No such file or directory
+1716553930373,"2024-05-24 12:32:09,508 sagemaker-training-toolkit ERROR    Reporting training FAILURE"
+1716553930373,"2024-05-24 12:32:09,509 sagemaker-training-toolkit ERROR    ExecuteUserScriptError:"
+1716553930373,ExitCode 1
+1716553930373,"ErrorMessage """""
+1716553930373,"Command ""/bin/sh -c ./run_training.sh --model_dir /opt/training --num_train_steps 2000 --pipeline_config_path faster_rcnn_resnet152_v1_640x640_coco17_tpu-8.config --sample_1_of_n_eval_examples 1"""
+1716553930374,"2024-05-24 12:32:09,509 sagemaker-training-toolkit ERROR    Encountered exit_code 1"
