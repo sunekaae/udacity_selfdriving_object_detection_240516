@@ -32,6 +32,7 @@ object detection course work for udacity's selfdriving car engineer nanodegree
   * fine_tune_checkpoint_type: "classification"
   * "Timed-out waiting for a checkpoint"
     * trying: change to: fine_tune_checkpoint_type: "detection"
+      * Timed-out waiting for a checkpoint.
   
    
 ## chatgpt on classication vs detection
